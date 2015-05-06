@@ -2,7 +2,7 @@
 
 ## Summary
 
-Planning Poker is web platform allowing users to perform scrum task time estimation votings, organized in virtual rooms. Its back-end is powered by Django framework. After registration, the user gets access to a customized django admin panel where they can manage their rooms and participants who gain access by personalized URLs.
+Planning Poker is a web platform allowing users to perform scrum task time estimation votings, organized in virtual rooms. Its back-end is powered by Django framework. After registration, the user gets access to a customized django admin panel where they can manage their rooms and participants, who gain access by personalized URLs.
 
 The voting data is transferred between clients using websockets (socket.io). Application's front-end is based on Twitter Bootstrap and a custom Angular.js engine. 
 
