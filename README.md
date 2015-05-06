@@ -21,46 +21,66 @@ In case you want to check out the full expirience, you might register an admin a
 In order to run your own instance of planning poker:
 
 1. Clone the repo:
-```bash
+
+ ```bash
 git clone https://github.com/praktikdev/planning-poker.git
 ```
+
 1. Create virtualenv:
-```bash
+
+ ```bash
 virtualenv env
 ```
+
 1. Activate it:
-```bash
+
+ ```bash
 . env/bin/activate
 ```
+
 1. cd the app directory:
-```bash
+
+ ```bash
 cd planning-poker
 ```
+
 1. Install requirements:
-```bash
+
+ ```bash
 pip install -r requirements.txt
 ```
+
 1. Create your copy of `local_settings.py` and fill it:
-```bash
+
+ ```bash
 cp poker/local_settings.py.dist poker/local_settings.py && vim poker/local_settings.py
 ```
+
 1. Create your copy of `constants.js`:
-```bash
+
+ ```bash
 cp app/static/scripts/constants.js.dist app/static/scripts/constants.js
 ```
+
 1. Migrate the database:
-```bash
+
+ ```bash
 python manage.py migrate
 ```
+
 1. Create your user account:
-```bash
+
+ ```bash
 python manage.py createsuperuser
 ```
+
 1. Run http and websocket servers:
-```bash
+
+ ```bash
 python manage.py runserver &
 python runserver.py &
 ```
+
 1. Navigate over to [http://localhost:8000/admin](http://localhost:8000/admin) to create your first planning poker room!
 
 ## License
